@@ -8,7 +8,7 @@
 				<showClass>true</showClass>
 				<logFilePattern>cat_{0,date,yyyyMMdd}.log</logFilePattern>
 				<baseDirRef>CAT_HOME</baseDirRef>
-				<defaultBaseDir>/data/applogs/cat</defaultBaseDir>
+				<defaultBaseDir>/Users/liufree/data/applogs/cat</defaultBaseDir>
 			</configuration>
 		</component>
 	</components>

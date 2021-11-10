@@ -7,7 +7,7 @@
     <group-server id="127.0.0.1"/>
   </server-group>
   <domain id="cat">
-    <group id="default">
+    <group id="default"DefaultDataSourceProvider>
       <server id="127.0.0.1" port="2280" weight="1.0"/>
     </group>
   </domain>

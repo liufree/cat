@@ -17,9 +17,8 @@
  * limitations under the License.
  */
 package com.dianping.cat.consumer.util;
-
-import sun.misc.BASE64Encoder;
-
+//import sun.misc.BASE64Encoder;
+import org.apache.commons.codec.binary.Base64;
 public class InvidStringBuilder {
 
 	public static final int s_lengthLimit = 256;
@@ -48,7 +47,8 @@ public class InvidStringBuilder {
 			}
 		}
 		if (needBase64) {
-			return "Base64." + new BASE64Encoder().encodeBuffer(key.getBytes()).trim();
+			//			return "Base64." + new BASE64Encoder().encodeBuffer(key.getBytes()).trim();
+			return "Base64." + Base64.encodeBase64(key.getBytes());
 		} else {
 			return sb.toString();
 		}
